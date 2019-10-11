@@ -1,19 +1,16 @@
-
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="brand-title" href="{{ url('/') }}">
                 Test task
             </a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse mt-4" id="navbarSupportedContent">
-
-                <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
-                    <!-- Authentication Links -->
                     @guest
                     <li class="nav-item">
 
@@ -57,7 +54,6 @@
                                     <a class="dropdown-item" href="{{ route('info') }}">Info</a>
                                     <a class="dropdown-item" href="{{ route('preferences') }}">Preferences</a>
                                 </div>
-
                             </li>
 
                             <li><a href="{{asset(route('settings'))}}">Settings</a></li>

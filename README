@@ -1,0 +1,6 @@
+
+	1 Change ENV. settings
+	
+	1 php artisan migrate
+
+	2 php artisan db:seed --class=CitiesTableSeeder
