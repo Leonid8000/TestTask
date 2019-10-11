@@ -6,9 +6,8 @@
     <body>
         <main id="main">
         <div>
-            <h1 class="text-center ">Test task</h1>
+            <h1 class="text-center ">TEST TASK</h1>
             <hr />
-
             @if (Route::has('login'))
                 <div class="d-flex justify-content-center">
                     @auth

@@ -29,7 +29,6 @@
                                     <form method="POST" action="{{route('settings.update')}}">
                                         {{ csrf_field() }}
                                         @csrf
-
 {{-- Old password --}}
                                         <div class="form-group row">
                                             <label for="oldpassword" class="col-md-4 col-form-label text-md-right">{{ __('OldPassword*') }}</label>
@@ -44,8 +43,6 @@
                                                 @enderror
                                             </div>
                                         </div>
-
-
 {{-- New Password --}}
                                         <div class="form-group row">
                                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('New Password*') }}</label>
@@ -60,7 +57,7 @@
                                                 @enderror
                                             </div>
                                         </div>
-
+{{-- Confirm new password--}}
                                         <div class="form-group row">
                                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm New Password*') }}</label>
 

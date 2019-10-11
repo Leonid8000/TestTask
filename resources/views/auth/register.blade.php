@@ -141,9 +141,10 @@
                             </div>
 
                             <div class="col-md-3 col-sm-3 go-back-btn">
-                                <div class="btn btn-dark">
                                     <a href="{{ url('/') }}">
+                                        <div class="btn btn-dark">
                                       {{ __('Go Back') }}
+                                        </div>
                                     </a>
                                 </div>
                             </div>

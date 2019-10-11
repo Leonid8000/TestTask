@@ -19,12 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-
-
-
 // Profile routes:
-
 Route::resource('profiles', 'ProfileController');
 
 Route::get('profile/info', 'ProfileController@info')->name('info');
@@ -37,7 +32,7 @@ Route::get('profile/edit', 'ProfileController@edit_form')->name('edit');
 Route::get('/settings', 'SettingsController@index')->name('settings');
 //Change password
 Route::post('/settings', 'SettingsController@changePassword')->name('settings.update');
-//Route::resource('setting', 'SettingsController');
+
 
 Route::get('/user', function () {
     $user = Auth::user();

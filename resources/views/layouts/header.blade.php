@@ -4,7 +4,6 @@
             <a class="brand-title" href="{{ url('/') }}">
                 Test task
             </a>
-
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -12,13 +11,8 @@
             <div class="collapse navbar-collapse mt-4" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     @guest
-                    <li class="nav-item">
-
-                    </li>
                     @if (Route::has('register'))
-                        <li class="nav-item">
 
-                        </li>
                     @endif
                     @else
                         <div class="avatar">
