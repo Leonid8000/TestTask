@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html a:hover {
+  text-decoration: none;
+  color: #DAE4E5; }
+
+#main {
+  display: none; }
+
+main {
+  width: 100%;
+  height: 100%;
+  background: #222; }
+  main h1 {
+    padding: 20px;
+    font-family: "Anton", sans-serif;
+    margin-top: 20%;
+    text-transform: uppercase;
+    color: #DAE4E5;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1); }
+  main span {
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    perspective: 400px;
+    font-size: 20px;
+    font-family: "Forum", cursive;
+    background: #2F3538; }
+    main span a {
+      color: #DAE4E5;
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase; }
+    main span a:hover {
+      text-decoration: none;
+      color: ghostwhite; }
+  main span::after {
+    content: "";
+    position: absolute;
+    background: #8C8C8C; }
+  main .left-btn:hover {
+    transform: rotateY(30deg);
+    transition: 0.5s; }
+  main .left-btn::after {
+    width: 30px;
+    height: 100%;
+    left: -30px;
+    top: 0;
+    transform-origin: 100% 0;
+    transform: rotateY(-90deg); }
+  main .right-btn:hover {
+    transform: rotateY(-30deg);
+    transition: 0.5s; }
+  main .right-btn::after {
+    width: 30px;
+    height: 100%;
+    left: 100%;
+    top: 0;
+    transform-origin: 0 0;
+    transform: rotateY(90deg); }
+  main .btn-home:hover {
+    transform: rotateX(-30deg);
+    transition: 0.5s; }
+  main .btn-home::after {
+    width: 100%;
+    height: 24px;
+    top: -24px;
+    left: 0;
+    transform-origin: 0 100%;
+    transform: rotateX(90deg); }
+
+.h1-title {
+  font-family: "Anton", sans-serif; }
+
+.brand-title {
+  font-family: "Heebo", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2F3538; }
+  .brand-title:hover {
+    color: #8C8C8C; }
+
+.go-back-btn a {
+  color: white; }
+  .go-back-btn a:hover {
+    color: white; }
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background: #DAE4E5; }
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px; }
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #818181;
+  display: block; }
+  .sidebar a:hover {
+    color: #f1f1f1; }
+.sidebar .wrapper {
+  padding-top: 100px; }
+.sidebar i {
+  font-size: 20px; }
+.sidebar .dropdown-menu-right {
+  background: #222;
+  font-family: "Heebo", sans-serif; }
+
+.route-links {
+  display: none;
+  list-style-type: none; }
+  .route-links li {
+    border: 1px solid #ddd;
+    padding: 12px; }
+    .route-links li a {
+      color: #8C8C8C; }
+
+@media(max-width: 768px) {
+  .sidebar {
+    display: none; }
+
+  .route-links {
+    display: block; } }
+.navbar {
+  z-index: 1; }
+
+.accordion {
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.edit-btn {
+  margin-bottom: 5%; }
+
+.setting_text {
+  color: #2F3538;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Forum", cursive; }
+
+/*# sourceMappingURL=style.css.map */

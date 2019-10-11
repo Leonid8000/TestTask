@@ -1,0 +1,174 @@
+@import "variables"
+
+*
+  margin: 0
+  padding: 0
+
+html
+  a:hover
+    text-decoration: none
+    color: $mainLight
+
+#main
+  display: none
+
+main
+  width: 100%
+  height: 100%
+  background: $darkBg
+
+  h1
+    padding: 20px
+    font-family: $fontAnton
+    margin-top: 20%
+    text-transform: uppercase
+    color: $mainLight
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1)
+
+  span
+    padding: 8px 15px
+    margin-bottom: 15px
+    width: 120px
+    height: 50px
+    cursor: pointer
+    transform-style: preserve-3d
+    perspective: 400px
+    font-size: 20px
+    font-family: $fontForum
+    background: $mainDark
+
+    a
+      color: $mainLight
+      font-size: 24px
+      font-weight: 700
+      text-transform: uppercase
+    a:hover
+      text-decoration: none
+      color: ghostwhite
+
+  span::after
+    content: ''
+    position: absolute
+    background: $mainGrey
+
+  .left-btn:hover
+    transform: rotateY(30deg)
+    transition: 0.5s
+
+  .left-btn::after
+    width: 30px
+    height: 100%
+    left: -30px
+    top: 0
+    transform-origin: 100% 0
+    transform: rotateY(-90deg)
+
+  .right-btn:hover
+    transform: rotateY(-30deg)
+    transition: 0.5s
+
+  .right-btn::after
+    width: 30px
+    height: 100%
+    left: 100%
+    top: 0
+    transform-origin: 0 0
+    transform: rotateY(90deg)
+
+  .btn-home:hover
+    transform: rotateX(-30deg)
+    transition: 0.5s
+
+  .btn-home::after
+    width: 100%
+    height: 24px
+    top: -24px
+    left: 0
+    transform-origin: 0 100%
+    transform: rotateX(90deg)
+
+
+.h1-title
+  font-family: $fontAnton
+
+// Register Page
+.brand-title
+  font-family: $fontHeebo
+  font-size: 24px
+  font-weight: 600
+  color: $mainDark
+  &:hover
+    color: $mainGrey
+.go-back-btn
+  a
+    color: white
+    &:hover
+      color: white
+
+.avatar
+  height: 50px
+  width: 50px
+  border-radius: 25px
+  background: $mainLight
+
+//Home
+.sidebar
+  height: 100%
+  width: 160px
+  position: fixed
+  top: 0
+  left: 0
+  background-color: #111
+  overflow-x: hidden
+  padding-top: 16px
+
+.sidebar
+  a
+    padding: 6px 8px 6px 16px
+    text-decoration: none
+    font-size: 14px
+    color: #818181
+    display: block
+    &:hover
+      color: #f1f1f1
+  .wrapper
+    padding-top: 100px
+  i
+    font-size: 20px
+  .dropdown-menu-right
+    background: $darkBg
+    font-family: $fontHeebo
+
+
+.route-links
+  display: none
+  list-style-type: none
+  li
+    border: 1px solid #ddd
+    padding: 12px
+    a
+      color: $mainGrey
+
+@media(max-width: 768px)
+  .sidebar
+    display: none
+  .route-links
+    display: block
+
+.navbar
+  z-index: 1
+
+
+// Settings
+.accordion
+  margin-left: 10%
+  margin-right: 10%
+
+.edit-btn
+  margin-bottom: 5%
+
+.setting_text
+  color: $mainDark
+  font-size: 18px
+  font-weight: 600
+  font-family: $fontForum
