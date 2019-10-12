@@ -53,14 +53,15 @@ class RegisterController extends Controller
             'last_name' => ['required', 'string', 'max:255'],
             'birth' => ['required', 'string', 'max:255'],
             'email' => ['string', 'email', 'max:255', 'unique:users'],
-            'phone' => 'nullable|numeric', 'max:11',
-            'gender' => 'nullable|string', 'max:255',
-            'city' => 'nullable|string', 'max:255',
+            'phone' => 'nullable|numeric|digits:12|unique:users',
+            'gender' => 'nullable|string|max:255',
+            'city' => 'nullable|string|max:255',
             'password' => ['required', 'string', 'min:8', 'confirmed']
-            
+
         ]);
     }
 
+//'phone' => 'nullable|numeric|digits:11|unique:users',
     /**
      * Create a new user instance after a valid registration.
      *
