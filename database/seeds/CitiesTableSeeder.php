@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\DB;
 
 class CitiesTableSeeder extends Seeder
 {
-    private $cities = ["Kyiv", "Kharkiv", "Dnipro", "Donetsk", "Donetsk", "Lviv", "Kryvyi Rih", "Poltava", "Zaporizhia", "Kherson"];
+    private $cities = ["not selected","Kyiv", "Kharkiv", "Dnipro", "Donetsk", "Donetsk", "Lviv", "Kryvyi Rih", "Poltava", "Zaporizhia", "Kherson"];
 
     /**
      * Run the database seeds.

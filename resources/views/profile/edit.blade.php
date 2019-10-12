@@ -99,9 +99,9 @@
                                         $cities = DB::select(DB::raw('select * from cities'));
                                         ?>
                                         @if(count($cities)>0)
-                                                <option value="">Select city</option>
                                             @foreach ($cities as $city)
-                                                <option value="{{ $city->name }}">{{ $city->name }} </option>
+                                                    <option @if ($user->city == $city->name) selected="selected" @endif>{{$city->name}}</option>
+                                                {{--<option value="{{ $city->name }}">{{ $city->name }} </option>--}}
                                             @endforeach
                                         @else
                                             <option value="">Select city</option>
