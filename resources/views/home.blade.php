@@ -14,7 +14,7 @@
                                 $progress = 100;
                                 if($user->phone == null){
                                     $progress -= 14;
-                                }if($user->city == 'not selected'){
+                                }if($user->city == null){
                                     $progress -= 14;
                                 }if($user->gender == null){
                                     $progress -= 14;
@@ -37,7 +37,7 @@
         </div>
 
     {{-- Card Events --}}
-    @if ( $user->city != 'not selected')
+    @if ( $user->city != null)
     <div class="col-lg-3 offset-lg-2">
         <div class="card">
             <div class="card-header">
