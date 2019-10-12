@@ -43,10 +43,9 @@
             <div class="card-header">
                 <h5 class="text-center font-weight-bold">Activities nearby</h5>
             </div>
-
-                <div class="card-body">
-                    <p class="card-title">Events in the city of {{ $user->city }}:</p>
-                </div>
+            <div class="card-body">
+                 <p class="card-title">Events in the city of {{ $user->city }}:</p>
+            </div>
         </div>
     </div>
     @endif

@@ -3,7 +3,6 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-
 class CitiesTableSeeder extends Seeder
 {
     private $cities = ["Kyiv", "Kharkiv", "Dnipro", "Donetsk", "Donetsk", "Lviv", "Kryvyi Rih", "Poltava", "Zaporizhia", "Kherson"];

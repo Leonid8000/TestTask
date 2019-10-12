@@ -8,9 +8,10 @@
                 <div class="card">
 
                     <div class="card-body">
-                        <form action="{{route('profiles.update', $user->id)}}" method="POST">
+                        <form action="{{route('profile.update', $user->id)}}" method="POST">
                             @csrf
-                            {{ method_field('PATCH') }}
+                            {{ csrf_field() }}
+
                             {{-- Name --}}
                             <div class="form-group row">
                                 <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>

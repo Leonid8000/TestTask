@@ -22,7 +22,6 @@ class SettingsController extends Controller
      */
     public function index()
     {
-
         $user = Auth::user();
         return view('settings' ,compact('user'));
     }
@@ -30,8 +29,8 @@ class SettingsController extends Controller
         public function changePassword(Request $request){
 
             $this->validate($request,[
-            'oldpassword'     => 'required',
-            'password'=> 'required|confirmed',
+            'oldpassword' => 'required',
+            'password'    => 'required|confirmed'
             ]);
 
             $hashedPassword = Auth::user()->password;

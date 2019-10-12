@@ -11,8 +11,7 @@
             <div class="collapse navbar-collapse mt-4" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     @guest
-                    @if (Route::has('register'))
-
+                    @if (Route::has('login'))
                     @endif
                     @else
                         <div class="avatar">

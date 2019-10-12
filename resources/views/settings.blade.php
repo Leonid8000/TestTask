@@ -27,11 +27,11 @@
                             <div class="card">
                                 <div class="card-body">
                                     <form method="POST" action="{{route('settings.update')}}">
-                                        {{ csrf_field() }}
                                         @csrf
+                                        {{ csrf_field() }}
 {{-- Old password --}}
                                         <div class="form-group row">
-                                            <label for="oldpassword" class="col-md-4 col-form-label text-md-right">{{ __('OldPassword*') }}</label>
+                                            <label for="oldpassword" class="col-md-4 col-form-label text-md-right">{{ __('Old Password*') }}</label>
 
                                             <div class="col-md-6">
                                                 <input id="oldpassword" type="password" class="form-control @error('oldpassword') is-invalid @enderror" name="oldpassword" required autofocus>
@@ -72,7 +72,6 @@
                                                     {{ __('Change password') }}
                                                 </button>
                                             </div>
-
                                         </div>
                                     </form>
                                 </div>

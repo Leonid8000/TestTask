@@ -48,7 +48,6 @@
                                 <input class="form-control" type="date" id="birth" name="birth" value="" min="1919-01-01" max="2019-1-09" required>
                             </div>
                         </div>
-
 {{-- Gender --}}
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Gender') }}</label>
@@ -132,7 +131,7 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
-
+{{-- Confirm Password --}}
                         <div class="form-group row mb-0">
                             <div class="col-md-3 offset-md-4 col-sm-3">
                                 <button type="submit" class="btn btn-dark">

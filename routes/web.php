@@ -20,15 +20,16 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 // Profile routes:
-Route::resource('profiles', 'ProfileController');
+Route::post('/profile', 'ProfileController@update')->name('profile.update');
 
 Route::get('profile/info', 'ProfileController@info')->name('info');
 
 Route::get('profile/preferences', 'ProfileController@preferences')->name('preferences');
 
-Route::get('profile/edit', 'ProfileController@edit_form')->name('edit');
-    
-//Settings
+Route::get('profile/edit', 'ProfileController@showEditForm')->name('edit');
+
+
+//Settings 
 Route::get('/settings', 'SettingsController@index')->name('settings');
 //Change password
 Route::post('/settings', 'SettingsController@changePassword')->name('settings.update');
