@@ -45,7 +45,7 @@
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Birth day*') }}</label>
 
                             <div class="col-md-6">
-                                <input class="form-control" type="date" id="birth" name="birth" value="" min="1919-01-01" max="2019-1-09" required>
+                                <input class="form-control" type="date" id="birth" name="birth" value="{{ old('birth') }}" min="1919-01-01" max="2019-1-09" required>
                             </div>
                         </div>
 {{-- Gender --}}

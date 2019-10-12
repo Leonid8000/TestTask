@@ -9,7 +9,7 @@
     </div>
 @endif
 
-<div class="accordion" id="accordionExample">
+<div class="offset-lg-2 accordion" id="accordionExample">
     <div class="card">
         <div class="card-header" id="headingOne">
             <h2 class="mb-0">
