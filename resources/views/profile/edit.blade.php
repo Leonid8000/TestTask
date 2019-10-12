@@ -6,7 +6,6 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-
                     <div class="card-body">
                         <form action="{{route('profile.update', $user->id)}}" method="POST">
                             @csrf
@@ -41,7 +40,6 @@
                                     @enderror
                                 </div>
                             </div>
-
                             {{-- Birth Day --}}
                             <div class="form-group row">
                                 <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Birth day*') }}</label>
@@ -50,14 +48,13 @@
                                     <input class="form-control" type="date" id="birth" name="birth" value="{{ $user->birth }}" min="1919-01-01" max="2019-1-09" required>
                                 </div>
                             </div>
-
                             {{-- Gender --}}
                             <div class="form-group row">
                                 <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Gender') }}</label>
 
                                 <div class="col-md-6">
                                     <select class="form-control" name="gender" id="gender">
-                                        <option value="">Select gender</option>
+                                        <option value=""></option>
                                         <option value="male" @if ($user->gender == 'male') selected="selected" @endif>Male</option>
                                         <option value="female" @if ($user->gender == 'female') selected="selected" @endif>Female</option>
                                     </select>
@@ -98,15 +95,16 @@
 
                                 <div class="col-md-6">
                                     <select class="form-control" name="city" id="city">
-                                        <option value="">Select city</option>
                                         <?php
                                         $cities = DB::select(DB::raw('select * from cities'));
                                         ?>
                                         @if(count($cities)>0)
+                                                <option value="">Select city</option>
                                             @foreach ($cities as $city)
                                                 <option value="{{ $city->name }}">{{ $city->name }} </option>
                                             @endforeach
                                         @else
+                                            <option value="">Select city</option>
                                             <option value="">no cities</option>
                                         @endif
                                     </select>
