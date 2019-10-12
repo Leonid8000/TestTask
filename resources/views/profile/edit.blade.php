@@ -58,8 +58,8 @@
                                 <div class="col-md-6">
                                     <select class="form-control" name="gender" id="gender">
                                         <option value="">Select gender</option>
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
+                                        <option value="male" @if ($user->gender == 'male') selected="selected" @endif>Male</option>
+                                        <option value="female" @if ($user->gender == 'female') selected="selected" @endif>Female</option>
                                     </select>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@
                                                 <option value="{{ $city->name }}">{{ $city->name }} </option>
                                             @endforeach
                                         @else
-                                            <option value="not indicated">no cities</option>
+                                            <option value="">no cities</option>
                                         @endif
                                     </select>
                                 </div>

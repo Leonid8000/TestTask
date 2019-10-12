@@ -47,7 +47,6 @@
         <i class="fa fa-edit">Edit</i>
     </button>
     </a>
-
 </div>
 </main>
 @include('layouts.sidebar')
