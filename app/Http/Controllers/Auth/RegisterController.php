@@ -60,8 +60,7 @@ class RegisterController extends Controller
 
         ]);
     }
-
-//'phone' => 'nullable|numeric|digits:11|unique:users',
+    
     /**
      * Create a new user instance after a valid registration.
      *
