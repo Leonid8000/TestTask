@@ -7,9 +7,10 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-body">
-                        <form action="{{route('profile.update', $user->id)}}" method="POST">
-                            @csrf
+                        <form action="{{route('profile.update')}}" method="POST">
                             {{ csrf_field() }}
+                            @csrf
+
 
                             {{-- Name --}}
                             <div class="form-group row">
@@ -54,7 +55,7 @@
 
                                 <div class="col-md-6">
                                     <select class="form-control" name="gender" id="gender">
-                                        <option value="not selected"></option>
+                                        <option value="not selected">not selected</option>
                                         <option value="male" @if ($user->gender == 'male') selected="selected" @endif>Male</option>
                                         <option value="female" @if ($user->gender == 'female') selected="selected" @endif>Female</option>
                                     </select>

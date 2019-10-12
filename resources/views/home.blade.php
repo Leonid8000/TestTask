@@ -16,7 +16,7 @@
                                     $progress -= 14;
                                 }if($user->city == 'not selected'){
                                     $progress -= 14;
-                                }if($user->gender == null){
+                                }if($user->gender == 'not selected'){
                                     $progress -= 14;
                                 }
                                 ?>

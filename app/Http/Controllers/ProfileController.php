@@ -39,7 +39,7 @@ class ProfileController extends Controller
             'last_name' => 'required', 'string', 'max:255',
             'birth'     => 'required',
             'email'     => 'string', 'email', 'max:255', 'unique:users',
-            'phone'     => 'nullable|numeric', 'min:11',
+            'phone'     => 'nullable|numeric','max:11',
             'gender'    => 'nullable|string', 'max:255',
             'city'      => 'nullable|string', 'max:255',
 
