@@ -54,7 +54,7 @@
 
                             <div class="col-md-6">
                                 <select class="form-control" name="gender" id="gender">
-                                    <option value="">not selected</option>
+                                    <option value="not selected">not selected</option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
                                 </select>
