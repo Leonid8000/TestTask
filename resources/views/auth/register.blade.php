@@ -95,7 +95,6 @@
 
                             <div class="col-md-6">
                                 <select class="form-control" name="city" id="city">
-                                    <option value="not selected">not selected</option>
                                     <?php
                                         $cities = DB::select(DB::raw('select * from cities'));
                                     ?>
