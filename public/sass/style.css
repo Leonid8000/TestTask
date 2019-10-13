@@ -74,6 +74,9 @@ main {
     transform-origin: 0 100%;
     transform: rotateX(90deg); }
 
+@media(max-width: 1024px) {
+  main {
+    width: 100%; } }
 .h1-title {
   font-family: "Anton", sans-serif; }
 
@@ -131,7 +134,7 @@ main {
     .route-links li a {
       color: #8C8C8C; }
 
-@media(max-width: 768px) {
+@media(max-width: 998px) {
   .sidebar {
     display: none; }
 

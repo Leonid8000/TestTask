@@ -7,9 +7,9 @@
         <p>{{ session('successMsg') }}</p>
     </div>
 @endif
-<main>
-<div class="container">
-    <table class="table table-striped table-dark">
+<main class="">
+<div class="container offset-lg-2">
+    <table class=" table table-striped table-dark">
         <tbody>
         <tr>
             <td>Name:</td>
